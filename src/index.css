@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Stardom";
+    src: url("Stardom.ttf");
+}
+
+@font-face {
+    font-family: "MessinaLight";
+    src: url("MessinaSans-Light.ttf");
+}
+
+@font-face {
+    font-family: "MessinaBold";
+    src: url("MessinaSans-Bold.ttf");
+}
