@@ -9,7 +9,9 @@ export default {
       fontFamily:{
         Stardom: ["Stardom"],
         MessinaLight: ["MessinaLight"],
-        MessinaBold: ["MessinaBold"]
+        MessinaBold: ["MessinaBold"],
+        MessinaRegular: ["MessinaRegular"],
+        RanadeRegular: ["RanadaRegular"],
       },
       colors:{
         black: "#000000",
@@ -20,6 +22,9 @@ export default {
       },
       fontSize:{
         '10xl': '20rem',
+      },
+      textUnderlineOffset: {
+        9: '20px',
       }
     },
   },

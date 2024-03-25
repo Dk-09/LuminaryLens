@@ -3,7 +3,7 @@ import { useGSAP } from "@gsap/react";
 
 export default function Menu({hamButton, setHamButton}){
 
-    const pages = {HOME: "#HOME", PROJECTS: "#PROJECTS", SERVICES: "#SERVICES",ABOUTUS: "#ABOUTUS", TEAM: "#TEAM",CONTACT: "#CONTACT"}
+    const pages = {HOME: "#HOME", PROJECTS: "#PROJECTS", SERVICES: "#SERVICES",ABOUTUS: "#ABOUTUS", TEAM: "#TEAM"}
 
     async function handleHamButtomClick(){
         const animationPromise = new Promise((resolve) => {
@@ -120,7 +120,7 @@ export default function Menu({hamButton, setHamButton}){
     }, [hamButton])
 
     return(
-        <div className="h-screen w-screen fade bg-black">
+        <div className="flex flex-col h-screen w-screen fade bg-black">
             <div className="flex flex-row w-screen px-16 py-8">
                 <div id="LOGO" className="relative logo font-Stardom text-6xl">
                     LL
@@ -132,7 +132,7 @@ export default function Menu({hamButton, setHamButton}){
                     </svg>
                 </div>     
             </div>
-            <div className="flex flex-col w-screen h-screen  justify-top items-center">
+            <div className="flex flex-col flex-grow justify-center items-center">
                 <div className="text-9xl text-center font-MessinaBold">
                     {Object.entries(pages).map(entry => {
                         const[key, value] = entry;

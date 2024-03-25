@@ -16,3 +16,13 @@
     font-family: "MessinaBold";
     src: url("MessinaSans-Bold.ttf");
 }
+
+@font-face {
+    font-family: "MessinaRegular";
+    src: url("MessinaSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "RanadeRegular";
+    src: url("Ranade-Regular.ttf");
+}
