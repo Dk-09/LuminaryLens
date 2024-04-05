@@ -3,9 +3,18 @@ import { useGSAP } from "@gsap/react";
 
 export default function Menu({hamButton, setHamButton}){
 
-    const pages = {HOME: "#HOME", PROJECTS: "#PROJECTS", SERVICES: "#SERVICES",ABOUTUS: "#ABOUTUS", TEAM: "#TEAM"}
+    const pages = {HOME: "HOME", PROJECTS: "PROJECTS", SERVICES: "SERVICES",ABOUTUS: "ABOUTUS", TEAM: "TEAM"}
 
-    async function handleHamButtomClick(){
+    async function handleHamButtomClick(value){
+        const element = document.getElementById(value)
+        if(element){
+            const container = document.documentElement
+            const topOffset = element.getBoundingClientRect().top;
+            container.scrollBy({
+              top: topOffset,
+              behavior: 'smooth'
+            });
+        }
         const animationPromise = new Promise((resolve) => {
             if(hamButton == true){
                 gsap.set(".fade", {backgroundColor: "rgba(0,0,0,1)"}) 
@@ -41,6 +50,7 @@ export default function Menu({hamButton, setHamButton}){
                     opacity: 0,
                     duration: .2,
                     delay: 1,
+                    overwrite: false,
                     onComplete: resolve,
                 })
             }
@@ -50,14 +60,14 @@ export default function Menu({hamButton, setHamButton}){
     }
 
     function menuTextAniIn(value){
-        gsap.set(value + "2", {yPercent: 0} )
+        gsap.set("#" + value + "2", {yPercent: 0} )
 
-        gsap.to(value + "1", {
+        gsap.to("#" + value + "1", {
             duration: .3,
             ease: "power4.inOut",
             yPercent: -100,
         })
-        gsap.to(value + "2", {
+        gsap.to("#" + value + "2", {
             duration: .3,
             ease: "power4.inOut",
             yPercent: -100,
@@ -65,12 +75,12 @@ export default function Menu({hamButton, setHamButton}){
     }
     
     function menuTextAniOut(value){
-        gsap.to(value + "1", {
+        gsap.to("#" + value + "1", {
             duration: .3,
             ease: "power4.inOut",
             yPercent: 0,
         })
-        gsap.to(value + "2", {
+        gsap.to("#" + value + "2", {
             duration: .3,
             ease: "power4.inOut",
             yPercent: 0,
@@ -79,8 +89,6 @@ export default function Menu({hamButton, setHamButton}){
 
 
     useGSAP(() => {
-        document.body.style.overflow = hamButton ? 'hidden' : 'auto';
-
         document.addEventListener('keydown', (e) => {
             e.key == "Escape" ? handleHamButtomClick() : null
         })
@@ -141,14 +149,14 @@ export default function Menu({hamButton, setHamButton}){
 
                         return(
                             <div className="overflow-hidden"
-                                onClick={handleHamButtomClick} 
+                                onClick={() => handleHamButtomClick(value)} 
                                 key={value} 
                                 onMouseEnter={() => menuTextAniIn(value)} 
                                 onMouseLeave={() => menuTextAniOut(value)} >
-                                <div className="inline-block animateText">
+                                <div className="inline-block animateText cursor-pointer">
                                     <div className="flex flex-col h-28 overflow-hidden">
-                                        <a id={Id1} className="block" href={value}>{key}</a>
-                                        <a id={Id2} className="block font-MessinaLight" href={value}>{key}</a>
+                                        <a id={Id1} className="block">{key}</a>
+                                        <a id={Id2} className="block font-MessinaLight">{key}</a>
                                     </div>
                                 </div>
                             </div>

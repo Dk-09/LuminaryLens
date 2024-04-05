@@ -1,6 +1,6 @@
 export default function Hero(){
    return(
-    <div data-speed="1.4" id="HERO-TEXT" className="z-2 mx-14 flex flex-col justify-end flex-grow">
+    <div data-speed="1.4" id="HERO-TEXT" className="z-20 mx-14 flex flex-col justify-end flex-grow">
       <div className="font-MessinaLight text-10xl leading-none flex flex-row">
         <div>
           <div className="overflow-hidden">

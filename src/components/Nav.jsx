@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import gsap from "gsap";
 import Menu from "./Menu";
 
 export default function Nav(){

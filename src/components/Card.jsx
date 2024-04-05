@@ -17,7 +17,7 @@ export default function Card({title, img1, des, year, pad}){
                 {year}
               </div>
             </div>
-            <hr className="mt-6"></hr>
+            <hr className="line mt-6"></hr>
         </div>
     )
 }

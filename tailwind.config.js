@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/*.{jsx, js}","./src/components/*.{jsx,js}"],
+  content: ["./src/*.{jsx, js}","./src/components/*.{jsx,js}", "./src/pages/*.{jsx, js}"],
   theme: {
     extend: {
       prespective: {
