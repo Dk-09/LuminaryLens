@@ -22,7 +22,7 @@ function App() {
     ScrollSmoother.create({ 
       wrapper: "#smooth-wrapper",
       content: "#smooth-content", 
-      smooth: 1,
+      smooth: 2,
       effects: true,
     })
 
@@ -37,7 +37,7 @@ function App() {
           <Projects />
         </div>
       </div>
-      <div className="fixed w-screen h-screen">
+      <div className="fixed w-screen h-screen pointer-events-none">
         <div className="cur rounded-full w-4 h-4 bg-green z-100"></div>
       </div>
       <Nav/>
