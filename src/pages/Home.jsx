@@ -43,7 +43,7 @@ export default function Home(){
 
     return(
         <section id="HOME" className="relative h-screen w-screen overflow-hidden text-white flex flex-col">
-          <video  id="main-video" className="absolute top-0 left-0 insert-0 z-[-10] min-h-full object-cover">
+          <video id="main-video" className="absolute top-0 left-0 insert-0 z-[-10] min-h-full object-cover">
             <source src="./src/assets/1.mp4" type="video/mp4"/>
           </video>
           <Hero />

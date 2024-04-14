@@ -27,8 +27,7 @@ export default function Projects(){
     gsap.from(split.chars,{
       scrollTrigger: {
         trigger: "#mtext",
-        markers: true,
-        toggleActions: "play complete restart reset"
+        toggleActions: "play none none none",
       },
       yPercent: 100,
       duration: 1,
@@ -42,10 +41,10 @@ export default function Projects(){
   return(
       <section id="PROJECTS" className="w-screen bg-black py-40">
         <div className="flex flex-col bg-black">
-          <div className="mb-40 px-16 h-2/6 w-screen text-left text-MessinaRegular text-9xl text-white overflow-hidden">
+          <div className="mb-40 px-16 h-4/6 w-screen text-left text-MessinaRegular text-9xl text-white overflow-hidden">
             <span id="mtext">
-              PROJ
-              <span className="underline decoration-8 decoration-green underline-offset-9">E</span>CTS
+              PROJECTS 
+              <span className="text-green"> *</span>
             </span> 
           </div>
           <div  className="flex flex-col md:flex-row lg:flex-row text-white px-16 text-RanadeRegular text-3xl md:gap-20">
@@ -95,7 +94,7 @@ export default function Projects(){
               />
               <div data-speed="1.2" className="relative mt-20 mb-20 lg:mt-60 lg:mb-40 hidden md:block lg:block">
               <svg  viewBox="0 0 171 172" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_61_17)">
+                <g clipPath="url(#clip0_61_17)">
                 <path d="M115.749 56.289L119.767 56.8091L119.314 52.7881L115.302 52.2631L115.749 56.289ZM111.732 55.769L116.792 101.26L124.827 102.3L119.767 56.8091L111.732 55.769ZM115.302 52.2631L69.9092 46.3871L70.8048 54.439L116.197 60.3149L115.302 52.2631ZM112.596 53.0786L49.5769 114.977L55.8835 121.397L118.903 59.4994L112.596 53.0786Z" fill="#C9C2AC"/>
                 </g>
                 <defs>
@@ -112,8 +111,8 @@ export default function Projects(){
             <div className="w-full">
               <div className="w-full flex justify-center align-center md:inline-flex lg:inline-flex hidden">
                 <div data-speed="1.2" className="relative mt-20 mb-20 lg:mt-32 lg:mb-32 w-1/2 ">
-                <svg id="test"  viewBox="0 0 171 172" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_61_17)">
+                <svg viewBox="0 0 171 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clipPath="url(#clip0_61_17)">
                   <path d="M115.749 56.289L119.767 56.8091L119.314 52.7881L115.302 52.2631L115.749 56.289ZM111.732 55.769L116.792 101.26L124.827 102.3L119.767 56.8091L111.732 55.769ZM115.302 52.2631L69.9092 46.3871L70.8048 54.439L116.197 60.3149L115.302 52.2631ZM112.596 53.0786L49.5769 114.977L55.8835 121.397L118.903 59.4994L112.596 53.0786Z" fill="#C9C2AC"/>
                   </g>
                   <defs>

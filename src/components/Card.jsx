@@ -29,7 +29,7 @@ export default function Card({title, img1, des, year, pad}){
 
     return(
         <div id={title} onMouseEnter={() => cardAniIn()} onMouseLeave={() => cardAniOut()} className={data}>
-            <div className="overflow-hidden flex flex-col h-7 lg:h-10 text-2xl md:text-xl lg:text-4xl">
+            <div className="font-MessinaLight overflow-hidden flex flex-col h-7 lg:h-10 text-2xl md:text-xl lg:text-3xl">
               <span className={title}>
                 {title} 
               </span>

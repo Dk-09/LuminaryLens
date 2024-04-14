@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react"
 import { ScrollSmoother, ScrollTrigger } from "gsap-trial/all"
 import Projects from "./pages/Projects"
 import Home from "./pages/Home"
+import Services from "./pages/Services"
 
 function App() {
 
@@ -26,7 +27,6 @@ function App() {
       effects: true,
     })
 
-
   })
   
   return (
@@ -35,6 +35,12 @@ function App() {
         <div id="smooth-content">
           <Home/>
           <Projects />
+          <Services />
+          <div className="h-full bg-black">
+            <div className="h-screen"></div>
+            <div className="h-screen"></div>
+            <div className="h-screen"></div>
+          </div>
         </div>
       </div>
       <div className="fixed w-screen h-screen pointer-events-none">
