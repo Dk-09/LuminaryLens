@@ -24,7 +24,7 @@ export default {
         '10xl': '20rem',
       },
       textUnderlineOffset: {
-        9: '20px',
+        9: '40px',
       }
     },
   },
