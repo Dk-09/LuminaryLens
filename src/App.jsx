@@ -5,6 +5,7 @@ import { ScrollSmoother, ScrollTrigger } from "gsap-trial/all"
 import Projects from "./pages/Projects"
 import Home from "./pages/Home"
 import Services from "./pages/Services"
+import About from "./pages/About"
 
 function App() {
 
@@ -36,11 +37,8 @@ function App() {
           <Home/>
           <Projects />
           <Services />
-          <div className="h-full bg-black">
-            <div className="h-screen"></div>
-            <div className="h-screen"></div>
-            <div className="h-screen"></div>
-          </div>
+          <About />
+          <div className="h-screen bg-black text-white py-32 px-12"></div>
         </div>
       </div>
       <div className="fixed w-screen h-screen pointer-events-none">
