@@ -8,22 +8,24 @@ export default function About(){
     useGSAP(() => {
         gsap.registerPlugin(ScrollTrigger)
 
-        ScrollTrigger.create({
-            trigger: ".box",
-            start: "center center",
-            end: "bottom top",
-            markers: true,
-            pin: true,
+        gsap.to(".move", {
+            scrollTrigger:{
+                trigger: ".box",
+                start: "top center",
+                end: "93% center",
+                markers: true,
+                pin: true,
+            }
         })
 
     })
 
 
     return (
-        <div className="h-screen bg-black text-white py-32 px-12">
+        <div id="ABOUT US" className="h-screen bg-black text-white py-28 px-12">
             <div className="flex flex-row w-full font-MessinaRegular text-gray">
                 <div className="box w-1/2 jutify-center">
-                    <div className="h-11 flex flex-row font-MessinaBold text-4xl text-white justify-center gap-4">
+                    <div className="move flex flex-row font-MessinaBold text-4xl text-white justify-center gap-4">
                         <span>Few</span>
                         <div className="flex flex-col overflow-hidden h-11">
                             <span id="words">Words</span>
