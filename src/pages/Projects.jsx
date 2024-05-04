@@ -27,7 +27,7 @@ export default function Projects(){
     gsap.from(split.chars,{
       scrollTrigger: {
         trigger: "#mtext",
-        toggleActions: "play complete restart reset",
+        toggleActions: "play complete none reset",
       },
       yPercent: 100,
       duration: 1,

@@ -8,13 +8,13 @@ export default function Services(){
     gsap.registerPlugin(SplitText, ScrollTrigger, DrawSVGPlugin) 
 
     let split = new SplitText(".mtext2", {type: "chars"})
-    gsap.set(["#image1", "#image2", "#image3", "#image4", "#image5"],{visibility:"hidden",opacity: 0})
+    gsap.set(["#image1", "#image2", "#image3", "#image4", "#image5"],{autoAlpha:0, display: "none"})
     gsap.set(["#line1" ,"#line2", "#line3", "#line4", "#line5"], {width: 0})
 
     gsap.from(split.chars,{
       scrollTrigger: {
         trigger: ".mtext2",
-        toggleActions: "play complete restart reset",
+        toggleActions: "play complete none reset",
       },
       yPercent: 100,
       duration: 1,
@@ -25,10 +25,9 @@ export default function Services(){
 
     function handleMouseEnter(i){
       gsap.to("#image" + i,{
-          visibility: "visible",
           duration: .5,
-          opacity: 1,
-          overwrite: "auto",
+          autoAlpha: 1,
+          display: "block",
       })
       gsap.to("#arrow" + i,{
           opacity: 1,
@@ -48,24 +47,19 @@ export default function Services(){
 
     function handleMouseMove(i, e){
       const rect = document.getElementById("image" + i).getBoundingClientRect() 
-      let xTo = gsap.quickTo("#image" + i, "x",{
-        duration: 0.6, 
-        ease: "power3",
-      }),
-      yTo = gsap.quickTo("#image" + i, "y",{
-        duration: 0.6, 
+      gsap.to("#image" + i, {
+        x: e.clientX - rect.left +  rect.left - rect.width /2,
+        y: e.clientY - rect.top - rect.height,
+        duration: 0.6,
         ease: "power3",
       })
-      xTo(e.clientX - rect.left +  rect.left - rect.width /2 )
-      yTo(e.clientY - rect.top - rect.height)
     }
 
     function handleMouseLeave(i){
       gsap.to("#image" + i,{
-          visibility: "hidden",
           duration: .5,
-          opacity: 0,
-          overwrite: "auto",
+          autoAlpha: 0,
+          display: "none",
       })
       gsap.to("#arrow" + i,{
           opacity: 1,
@@ -97,15 +91,19 @@ export default function Services(){
 
   })
     return(
-        <div id="SERVICES" className="py-40 mx-12">
-            <div className="flex flex-col text-black mb-40  h-4/6 text-left text-MessinaRegular text-9xl overflow-hidden">
-              <span className="mtext2">
-                OUR
-              </span> 
-              <span className="mtext2">
-                SERVICE
-                <span className="text-green">$</span>
-              </span> 
+        <div id="SERVICES" className="py-40 mx-12 bg-white">
+            <div className="flex flex-col text-black mb-40  h-4/6 text-left text-MessinaRegular text-9xl">
+              <div className="overflow-hidden">
+                <span className="mtext2">
+                  OUR
+                </span> 
+              </div>
+              <div className="overflow-hidden">
+                <span className="mtext2">
+                  SERVICE
+                  <span className="text-green">$</span>
+                </span> 
+              </div>
             </div>
             <div className="flex flex-col">
             <div id="section1" className="relative cursor-crosshair flex flex-col h-40">
@@ -120,7 +118,7 @@ export default function Services(){
                  />
                 </div>
               </div>
-              <hr id="line1" className="z-10 h-1 bg-green text-transparent w-full my-4"></hr>
+              <hr id="line1" className="z-10 h-1 bg-green text-transparent w-full mt-4"></hr>
             </div>
             <div id="section2" className="relative cursor-crosshair flex flex-col h-40">
               <div className="flex flex-row">
@@ -134,7 +132,7 @@ export default function Services(){
                   />
                 </div>
               </div>
-              <hr id="line2" className="z-10 h-1 bg-green text-transparent w-full my-4"></hr>
+              <hr id="line2" className="z-10 h-1 bg-green text-transparent w-full mt-4"></hr>
             </div>
             <div id="section3" className="relative cursor-crosshair flex flex-col h-40">
               <div className="flex flex-row">
@@ -148,7 +146,7 @@ export default function Services(){
                   />
                 </div>
               </div>
-              <hr id="line3" className="z-10 h-1 bg-green text-transparent w-full my-4"></hr>
+              <hr id="line3" className="z-10 h-1 bg-green text-transparent w-full mt-4"></hr>
             </div>
             <div id="section4" className="relative cursor-crosshair flex flex-col h-40">
               <div className="flex flex-row">
@@ -162,7 +160,7 @@ export default function Services(){
                   />
                 </div>
               </div>
-              <hr id="line4" className="z-10 h-1 bg-green text-transparent w-full my-4"></hr>
+              <hr id="line4" className="z-10 h-1 bg-green text-transparent w-full mt-4"></hr>
             </div>
             <div id="section5" className="relative cursor-crosshair flex flex-col h-40">
               <div className="flex flex-row">
@@ -176,7 +174,7 @@ export default function Services(){
                   />
                 </div>
               </div>
-              <hr id="line5" className="z-10 h-1 bg-green text-transparent w-full my-4"></hr>
+              <hr id="line5" className="z-10 h-1 bg-green text-transparent w-full mt-4"></hr>
             </div>
           </div>
         </div>

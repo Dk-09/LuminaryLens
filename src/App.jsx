@@ -6,6 +6,7 @@ import Projects from "./pages/Projects"
 import Home from "./pages/Home"
 import Services from "./pages/Services"
 import About from "./pages/About"
+import Team from "./pages/Team"
 
 function App() {
 
@@ -38,7 +39,7 @@ function App() {
           <Projects />
           <Services />
           <About />
-          <div className="h-screen bg-black text-white py-32 px-12"></div>
+          <Team />
         </div>
       </div>
       <div className="fixed w-screen h-screen pointer-events-none">
