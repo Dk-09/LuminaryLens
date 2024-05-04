@@ -51,7 +51,7 @@ export default function Projects(){
             <div className="md:w-3/5 w-full">
               <Card 
                 title="WEDDING"
-                img1="1.png"
+                img1="1.jpg"
                 des="RANVIR KAPOOR'S WEDDING"
                 year="2022"
                 pad="md:mt-80"
@@ -73,7 +73,7 @@ export default function Projects(){
               </div>
               <Card 
                 title="PET"
-                img1="3.png"
+                img1="3.jpg"
                 des="GIVE YOUR FRIEND THE BEST"
                 year="2022"
               />
@@ -81,14 +81,14 @@ export default function Projects(){
             <div className="md:w-4/5 w-full">
               <Card 
                 title="MODELING"
-                img1="5.png"
+                img1="5.jpg"
                 des="GIGI HADID'S PHOTOSHOOT"
                 year="2021"
               />
               <Card 
                 title="COUPLE"
-                img1="7.png"
-                des="VANITY FAIR OSCAR PARTY"
+                img1="7.jpg"
+                des="BRAD PITT AND ANGELINA JOLIE'S PHOTOSHOOT"
                 year="2024"
                 pad="md:mt-40"
               />
@@ -128,13 +128,13 @@ export default function Projects(){
               </div>
               <Card 
                 title="FAMILY"
-                img1="9.png"
+                img1="9.jpg"
                 des="CAPTURE YOUR FAMILIES HAPPY MOMENT WITH OUR LENS"
                 year="2023"
               />
               <Card 
                 title="WEDDING"
-                img1="11.png"
+                img1="11.jpg"
                 des="KL RAHUL'S WEDDING"
                 year="2024"
                 pad="md:mt-40"
