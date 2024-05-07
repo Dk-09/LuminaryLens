@@ -43,8 +43,8 @@ export default function Home(){
 
     return(
         <section id="HOME" className="relative h-screen w-screen overflow-hidden text-white flex flex-col">
-          <video id="main-video" className="absolute top-0 left-0 insert-0 z-[-10] min-h-full object-cover">
-            <source src="./src/assets/1.mp4" type="video/mp4"/>
+          <video autoPlay muted loop id="main-video" className="absolute top-0 left-0 insert-0 z-[-10] min-h-full min-w-full object-cover">
+            <source src="/images/1.mp4" type="video/mp4"/>
           </video>
           <Hero />
           <div className="flex flex-row absolute bottom-0 z-[-5] w-full h-full">
