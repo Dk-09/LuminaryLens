@@ -91,7 +91,7 @@ export default function Services(){
 
   })
     return(
-        <div id="SERVICES" className="py-40 mx-12 bg-white">
+        <div id="SERVICES" className="py-40 mx-16 bg-white">
             <div className="flex flex-col text-black mb-40  h-4/6 text-left text-MessinaRegular text-9xl">
               <div className="overflow-hidden">
                 <span className="mtext2">

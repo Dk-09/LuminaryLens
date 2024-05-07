@@ -45,7 +45,7 @@ export default function About(){
 
 
     return (
-        <div id="ABOUT US" className="bg-black text-white py-28 px-12">
+        <div id="ABOUTUS" className="bg-black text-white py-28 px-12">
             <div className="flex flex-row w-full font-MessinaRegular text-gray">
                 <div className="box w-1/2 jutify-center">
                     <div className="move flex flex-row font-MessinaBold text-4xl text-white justify-center gap-4">

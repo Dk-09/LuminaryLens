@@ -1,12 +1,14 @@
-import Nav from "./components/Nav"
 import gsap from "gsap-trial"
 import { useGSAP } from "@gsap/react"
 import { ScrollSmoother, ScrollTrigger } from "gsap-trial/all"
+
+import Nav from "./components/Nav"
 import Projects from "./pages/Projects"
 import Home from "./pages/Home"
 import Services from "./pages/Services"
 import About from "./pages/About"
 import Team from "./pages/Team"
+import Footer from "./pages/Footer"
 
 function App() {
 
@@ -40,6 +42,7 @@ function App() {
           <Services />
           <About />
           <Team />
+          <Footer />
         </div>
       </div>
       <div className="fixed w-screen h-screen pointer-events-none">

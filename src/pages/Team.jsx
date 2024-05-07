@@ -23,6 +23,10 @@ export default function Team(){
         })
         
         function handleMouseEnter(i){
+          gsap.to(".cluster" + i, {
+            zIndex: 50,
+            duration: .01,
+          })
           gsap.to("#personImg" + i,{
               duration: .5,
               autoAlpha: 1,
@@ -41,6 +45,10 @@ export default function Team(){
         }
 
         function handleMouseLeave(i){
+          gsap.to(".cluster" + i, {
+            zIndex: 10,
+            duration: .01,
+          })
           gsap.to("#personImg" + i,{
               duration: .5,
               autoAlpha: 0,
@@ -80,19 +88,19 @@ export default function Team(){
             <div className="flex flex-col align-end">
             <div id="person1" className="relative cursor-crosshair flex flex-col h-32 justify-center align-center">
               <div className="flex flex-row w-full">
-                <img id="personImg1" className="w-80 h-auto z-11 fixed pointer-events-none" src="/images/person 1.jpg"></img>
-                <div className="flex flex-row z-10 w-full text-center font-MessinaLight">
-                  <span className="text-xl mt-auto text-gray ">Since 2015</span>
-                  <span className="flex-grow text-6xl text-gray ">Avalon <span className="text-white">Sterling</span></span>
-                  <span className="text-xl mt-auto text-gray ">Photgrapher</span>
+                <img id="personImg1" className="w-80 h-auto z-20 fixed pointer-events-none" src="/images/person 1.jpg"></img>
+                <div className="flex flex-row z-10 w-full text-center font-MessinaLight cluster1">
+                  <span className="text-xl mt-auto text-gray">Since 2015</span>
+                  <span className="flex-grow text-6xl text-gray">Avalon <span className="text-white">Sterling</span></span>
+                  <span className="text-xl mt-auto text-gray">Photgrapher</span>
                 </div>
               </div>
               <hr className="z-10  bg-gray text-transparent w-full mt-4"></hr>
             </div>
             <div id="person2" className="relative cursor-crosshair flex flex-col h-32 justify-center align-center">
               <div className="flex flex-row w-full">
-                <img id="personImg2" className="w-80 h-auto z-11 fixed pointer-events-none" src="/images/person 2.jpg"></img>
-                <div className="flex flex-row z-10 w-full text-center font-MessinaLight">
+                <img id="personImg2" className="w-80 h-auto z-20 fixed pointer-events-none" src="/images/person 2.jpg"></img>
+                <div className="flex flex-row z-10 w-full text-center font-MessinaLight cluster2">
                   <span className="text-xl mt-auto text-gray">Since 2017</span>
                   <span className="flex-grow text-6xl text-gray">Phoenix <span className="text-white">Hawthorne</span></span>
                   <span className="text-xl mt-auto text-gray">Art Director</span>
@@ -102,8 +110,8 @@ export default function Team(){
             </div>
             <div id="person3" className="relative cursor-crosshair flex flex-col h-32 justify-center align-center">
               <div className="flex flex-row w-full">
-                <img id="personImg3" className="w-80 h-auto z-11 fixed pointer-events-none" src="/images/person 3.jpg"></img>
-                <div className="flex flex-row z-10 w-full text-center font-MessinaLight">
+                <img id="personImg3" className="w-80 h-auto z-20 fixed pointer-events-none" src="/images/person 3.jpg"></img>
+                <div className="flex flex-row z-10 w-full text-center font-MessinaLight cluster3">
                   <span className="text-xl mt-auto text-gray">Since 2015</span>
                   <span className="flex-grow text-6xl text-gray">Luna <span className="text-white">Evergreen</span></span>
                   <span className="text-xl mt-auto text-gray">Manager</span>
@@ -113,8 +121,8 @@ export default function Team(){
             </div>
             <div id="person4" className="relative cursor-crosshair flex flex-col h-32 justify-center align-center">
               <div className="flex flex-row w-full">
-                <img id="personImg4" className="w-80 h-auto z-11 fixed pointer-events-none" src="/images/person 4.jpg"></img>
-                <div className="flex flex-row z-10 w-full text-center font-MessinaLight">
+                <img id="personImg4" className="w-80 h-auto z-20 fixed pointer-events-none" src="/images/person 4.jpg"></img>
+                <div className="flex flex-row z-10 w-full text-center font-MessinaLight cluster4">
                   <span className="text-xl mt-auto text-gray">Since 2016</span>
                   <span className="flex-grow text-6xl text-gray">Orion <span className="text-white">Frost</span></span>
                   <span className="text-xl mt-auto text-gray">Makeup Artist</span>
@@ -124,8 +132,8 @@ export default function Team(){
             </div>
             <div id="person5" className="relative cursor-crosshair flex flex-col h-32 justify-center align-center">
               <div className="flex flex-row w-full">
-                <img id="personImg5" className="w-80 h-auto z-11 fixed pointer-events-none" src="/images/person 5.jpg"></img>
-                <div className="flex flex-row z-10 w-full text-center font-MessinaLight">
+                <img id="personImg5" className="w-80 h-auto z-20 fixed pointer-events-none" src="/images/person 5.jpg"></img>
+                <div className="flex flex-row z-10 w-full text-center font-MessinaLight cluster5">
                   <span className="text-xl mt-auto text-gray">Since 2015</span>
                   <span className="flex-grow text-6xl text-gray">Nova <span className="text-white">Wilder</span></span>
                   <span className="text-xl mt-auto text-gray">Photo Editor</span>
