@@ -38,10 +38,10 @@ export default function Nav(){
     }, [])
 
     return (
-        <div id="NAV" className="fixed z-10 text-white">
+        <div id="NAV" className="fixed top-0 left-0 z-50 text-white">
             { hamButton && <Menu hamButton={hamButton} setHamButton={setHamButton}/>}
-            <div className="ResponsiveNav flex flex-row w-screen px-16 py-8">
-                <div id="LOGO" className="relative logo font-Stardom text-6xl mix-blend-difference">
+            <div className="ResponsiveNav flex flex-row w-screen px-4 md:px-16 py-8">
+                <div id="LOGO" className="relative logo font-Stardom text-4xl lg:text-6xl mix-blend-difference">
                     <span className="logo-text opacity-0">LL</span>
                     <span className="absolute w-full h-full origin-left logo-bg block z-10 left-0 top-0 scale-x-0 bg-white"></span>
                 </div> 

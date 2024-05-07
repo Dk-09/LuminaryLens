@@ -45,9 +45,9 @@ export default function About(){
 
 
     return (
-        <div id="ABOUTUS" className="bg-black text-white py-28 px-12">
+        <div id="ABOUTUS" className="bg-black text-white py-28 px-4 lg:px-12">
             <div className="flex flex-row w-full font-MessinaRegular text-gray">
-                <div className="box w-1/2 jutify-center">
+                <div className="box w-1/2 jutify-center hidden md:block">
                     <div className="move flex flex-row font-MessinaBold text-4xl text-white justify-center gap-4">
                         <span>Few</span>
                         <div className="flex flex-col overflow-hidden h-11">
@@ -56,8 +56,8 @@ export default function About(){
                         </div>
                     </div>
                 </div>
-                <div className="w-1/2 flex flex-col gap-20">
-                    <p className="leading-8 w-3/4">Luminary Lens Studio is a dynamic creative space where moments are transformed into timeless stories. With a blend of expertise and innovation, our dedicated team specializes in capturing the essence of every occasion. From portraits to commercial projects, we meticulously craft visual narratives that resonate with authenticity and emotion. </p>
+                <div className="w-full md:w-1/2 flex flex-col gap-20">
+                    <p className="leading-8 md:w-3/4">Luminary Lens Studio is a dynamic creative space where moments are transformed into timeless stories. With a blend of expertise and innovation, our dedicated team specializes in capturing the essence of every occasion. From portraits to commercial projects, we meticulously craft visual narratives that resonate with authenticity and emotion. </p>
                     <div className="move2 flex flex-col gap-10">
                         <div className="w-1/2">
                             <h1 className="text-8xl pb-4 text-white">1500+</h1>

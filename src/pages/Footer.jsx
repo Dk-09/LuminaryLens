@@ -40,23 +40,23 @@ export default function Footer() {
            <div className="marquee relative bg-green font-MessinaBold text-7xl text-black select-none py-16 uppercase">
                 <div className="marquee__inner flex flex-row flex-auto inline-block w-[fit-content]">
                     <div className="marquee__part flex align-center shrink-0">
-                        Luminary Lens 📸 Capturing moments 📽️
+                        Luminary Lens 📸 Capturing moments 📽️  
                     </div>
                     <div className="marquee__part flex align-center shrink-0">
-                        Luminary Lens 📸 Capturing moments 📽️
+                        Luminary Lens 📸 Capturing moments 📽️  
                     </div>
                     <div className="marquee__part flex align-center shrink-0">
-                        Luminary Lens 📸 Capturing moments 📽️
+                        Luminary Lens 📸 Capturing moments 📽️  
                     </div>
                     <div className="marquee__part flex aling-center shrink-0">
-                        Luminary Lens 📸 Capturing moments 📽️
+                        Luminary Lens 📸 Capturing moments 📽️  
                     </div>
                     <div className="marquee__part flex align-center shrink-0">
-                        Luminary Lens 📸 Capturing moments 📽️
+                        Luminary Lens 📸 Capturing moments 📽️  
                     </div>
                 </div>
             </div> 
-            <div className="flex font-MessinaRegular w-screen py-20 text-xl px-16">
+            <div className="flex font-MessinaRegular w-screen py-20 lg:py-28 text-sm md:text-xl px-4 md:px-16">
                 <div className="flex flex-col gap-4 flex-grow">
                     <span className="text-green">FOLLOW US</span>
                     <div className="flex flex-col">
@@ -78,10 +78,9 @@ export default function Footer() {
 
                 </div>
             </div>
-            <div className="flex flex-row justify-between font-MessinaRegular text-xl w-screen px-16 pb-8 ">
+            <div className="flex flex-row justify-between font-MessinaRegular text-xs md:text-xl w-screen px-4 md:px-16 pb-8 ">
                 <span>LuminaryLens</span>
-                <span>All Rights Reserved | 2024</span>
-                <span>Made By Dhruv</span>
+                <span>Made By Dhruv ❤️</span>
             </div>
         </div>
     )

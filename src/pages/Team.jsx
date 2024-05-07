@@ -71,8 +71,8 @@ export default function Team(){
     })
 
     return(
-        <div id="TEAM" className="bg-black py-40 px-16">
-            <div className="flex flex-col mb-40 text-white h-4/6 text-left text-MessinaRegular text-9xl">
+        <div id="TEAM" className="bg-black py-20 md:py-40">
+            <div className="flex flex-col md:mb-40 mb-20 text-white h-4/6 text-left text-MessinaRegular text-9xl px-16 ">
                 <div className="overflow-hidden">
                   <span className="mtext3">
                     OUR
@@ -85,64 +85,64 @@ export default function Team(){
                   </span> 
                 </div>
             </div>
-            <div className="flex flex-col align-end">
-            <div id="person1" className="relative cursor-crosshair flex flex-col h-32 justify-center align-center">
+            <div className="flex flex-col align-end px-4 md:px-16">
+            <div id="person1" className="relative cursor-crosshair flex flex-col h-24 md:h-32 justify-center align-center">
               <div className="flex flex-row w-full">
                 <img id="personImg1" className="w-80 h-auto z-20 fixed pointer-events-none" src="/images/person 1.jpg"></img>
-                <div className="flex flex-row z-10 w-full text-center font-MessinaLight cluster1">
-                  <span className="text-xl mt-auto text-gray">Since 2015</span>
-                  <span className="flex-grow text-6xl text-gray">Avalon <span className="text-white">Sterling</span></span>
-                  <span className="text-xl mt-auto text-gray">Photgrapher</span>
+                <div className="flex flex-row z-10 w-full text-center font-MessinaLight cluster1 text-xs lg:text-xl">
+                  <span className="mt-auto text-gray">Since 2015</span>
+                  <span className="flex-grow text-2xl md:text-6xl text-gray">Avalon <span className="text-white">Sterling</span></span>
+                  <span className="mt-auto text-gray">Photgrapher</span>
                 </div>
               </div>
               <hr className="z-10  bg-gray text-transparent w-full mt-4"></hr>
             </div>
-            <div id="person2" className="relative cursor-crosshair flex flex-col h-32 justify-center align-center">
+            <div id="person2" className="relative cursor-crosshair flex flex-col h-24 md:h-32 justify-center align-center">
               <div className="flex flex-row w-full">
                 <img id="personImg2" className="w-80 h-auto z-20 fixed pointer-events-none" src="/images/person 2.jpg"></img>
-                <div className="flex flex-row z-10 w-full text-center font-MessinaLight cluster2">
-                  <span className="text-xl mt-auto text-gray">Since 2017</span>
-                  <span className="flex-grow text-6xl text-gray">Phoenix <span className="text-white">Hawthorne</span></span>
-                  <span className="text-xl mt-auto text-gray">Art Director</span>
+                <div className="flex flex-row z-10 w-full text-center font-MessinaLight cluster2 text-xs lg:text-xl">
+                  <span className="mt-auto text-gray">Since 2017</span>
+                  <span className="flex-grow text-2xl md:text-6xl text-gray">Phoenix <span className="text-white">STARK</span></span>
+                  <span className="mt-auto text-gray">Art Director</span>
                 </div>
               </div>
               <hr className="z-10  bg-gray text-transparent w-full mt-4"></hr>
             </div>
-            <div id="person3" className="relative cursor-crosshair flex flex-col h-32 justify-center align-center">
+            <div id="person3" className="relative cursor-crosshair flex flex-col h-24 md:h-32 justify-center align-center">
               <div className="flex flex-row w-full">
                 <img id="personImg3" className="w-80 h-auto z-20 fixed pointer-events-none" src="/images/person 3.jpg"></img>
-                <div className="flex flex-row z-10 w-full text-center font-MessinaLight cluster3">
-                  <span className="text-xl mt-auto text-gray">Since 2015</span>
-                  <span className="flex-grow text-6xl text-gray">Luna <span className="text-white">Evergreen</span></span>
-                  <span className="text-xl mt-auto text-gray">Manager</span>
+                <div className="flex flex-row z-10 w-full text-center font-MessinaLight cluster3 text-xs lg:text-xl">
+                  <span className="mt-auto text-gray">Since 2015</span>
+                  <span className="flex-grow text-2xl md:text-6xl text-gray">Luna <span className="text-white">Evergreen</span></span>
+                  <span className="mt-auto text-gray">Manager</span>
                 </div>
               </div>
               <hr className="z-10  bg-gray text-transparent w-full mt-4"></hr>
             </div>
-            <div id="person4" className="relative cursor-crosshair flex flex-col h-32 justify-center align-center">
+            <div id="person4" className="relative cursor-crosshair flex flex-col h-24 md:h-32 justify-center align-center">
               <div className="flex flex-row w-full">
                 <img id="personImg4" className="w-80 h-auto z-20 fixed pointer-events-none" src="/images/person 4.jpg"></img>
-                <div className="flex flex-row z-10 w-full text-center font-MessinaLight cluster4">
-                  <span className="text-xl mt-auto text-gray">Since 2016</span>
-                  <span className="flex-grow text-6xl text-gray">Orion <span className="text-white">Frost</span></span>
-                  <span className="text-xl mt-auto text-gray">Makeup Artist</span>
+                <div className="flex flex-row z-10 w-full text-center font-MessinaLight cluster4 text-xs lg:text-xl">
+                  <span className="mt-auto text-gray">Since 2016</span>
+                  <span className="flex-grow text-2xl md:text-6xl text-gray">Orion <span className="text-white">Frost</span></span>
+                  <span className="mt-auto text-gray">Makeup Artist</span>
                 </div>
               </div>
               <hr className="z-10  bg-gray text-transparent w-full mt-4"></hr>
             </div>
-            <div id="person5" className="relative cursor-crosshair flex flex-col h-32 justify-center align-center">
+            <div id="person5" className="relative cursor-crosshair flex flex-col h-24 md:h-32 justify-center align-center">
               <div className="flex flex-row w-full">
                 <img id="personImg5" className="w-80 h-auto z-20 fixed pointer-events-none" src="/images/person 5.jpg"></img>
-                <div className="flex flex-row z-10 w-full text-center font-MessinaLight cluster5">
-                  <span className="text-xl mt-auto text-gray">Since 2015</span>
-                  <span className="flex-grow text-6xl text-gray">Nova <span className="text-white">Wilder</span></span>
-                  <span className="text-xl mt-auto text-gray">Photo Editor</span>
+                <div className="flex flex-row z-10 w-full text-center font-MessinaLight cluster5 text-xs lg:text-xl">
+                  <span className="mt-auto text-gray">Since 2015</span>
+                  <span className="flex-grow text-2xl md:text-6xl text-gray">Nova <span className="text-white">Wilder</span></span>
+                  <span className="mt-auto text-gray">Photo Editor</span>
                 </div>
               </div>
               <hr className="z-10  bg-gray text-transparent w-full mt-4"></hr>
             </div>
             </div>
-            <div className="text-2xl pt-14 font-MessinaLight text-gray">
+            <div className="text-sm md:text-2xl pt-4 px-4 md:px-16 md:pt-14 font-MessinaLight text-gray">
                 +15 OTHER MEMBERS
             </div>
         </div>

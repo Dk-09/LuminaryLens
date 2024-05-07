@@ -39,15 +39,15 @@ export default function Projects(){
   })
 
   return(
-      <section id="PROJECTS" className="w-screen bg-black py-40">
+      <section id="PROJECTS" className="w-screen bg-black py-20 lg:py-40">
         <div className="flex flex-col bg-black">
-          <div className="mb-40 px-16 h-4/6 w-screen text-left text-MessinaRegular text-9xl text-white overflow-hidden">
+          <div className="lg:mb-40 mb-20 px-16 h-4/6 w-screen text-left text-MessinaRegular text-9xl text-white overflow-hidden">
             <span id="mtext">
               PROJECTS 
               <span className="text-green"> *</span>
             </span> 
           </div>
-          <div  className="flex flex-col md:flex-row lg:flex-row text-white px-16 text-RanadeRegular text-3xl md:gap-20">
+          <div  className="flex flex-col md:flex-row lg:flex-row text-white px-4 md:px-16 text-RanadeRegular text-3xl md:gap-20">
             <div className="md:w-3/5 w-full">
               <Card 
                 title="WEDDING"

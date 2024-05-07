@@ -91,26 +91,26 @@ export default function Services(){
 
   })
     return(
-        <div id="SERVICES" className="py-40 mx-16 bg-white">
-            <div className="flex flex-col text-black mb-40  h-4/6 text-left text-MessinaRegular text-9xl">
-              <div className="overflow-hidden">
-                <span className="mtext2">
-                  OUR
-                </span> 
-              </div>
-              <div className="overflow-hidden">
-                <span className="mtext2">
-                  SERVICE
-                  <span className="text-green">$</span>
-                </span> 
-              </div>
+        <div id="SERVICES" className="py-20 md:py-40 bg-white">
+          <div className="flex flex-col text-black mb-20 lg:mb-40 h-4/6 text-left text-MessinaRegular text-9xl px-16">
+            <div className="overflow-hidden">
+              <span className="mtext2">
+                OUR
+              </span> 
             </div>
-            <div className="flex flex-col">
-            <div id="section1" className="relative cursor-crosshair flex flex-col h-40">
+            <div className="overflow-hidden">
+              <span className="mtext2">
+                SERVICE
+                <span className="text-green">$</span>
+              </span> 
+            </div>
+          </div>
+          <div className="flex flex-col px-4 md:px-16 text-6xl md:text-8xl">
+            <div id="section1" className="relative cursor-crosshair flex flex-col h-32 md:h-40 ">
               <div className="flex flex-row">
                 <img id="image1" className="w-1/2 h-auto z-5 fixed pointer-events-none" src="/images/wedding.jpg"></img>
                 <div className="flex-grow z-10">
-                  <span className="text1 font-MessinaLight text-8xl text-gray">Wedding</span>
+                  <span className="text1 font-MessinaLight text-gray">Wedding</span>
                 </div>
                 <div className="z-10">
                   <Arrow 
@@ -120,11 +120,11 @@ export default function Services(){
               </div>
               <hr id="line1" className="z-10 h-1 bg-green text-transparent w-full mt-4"></hr>
             </div>
-            <div id="section2" className="relative cursor-crosshair flex flex-col h-40">
+            <div id="section2" className="relative cursor-crosshair flex flex-col h-32 md:h-40">
               <div className="flex flex-row">
                 <img id="image2" className="w-1/2 h-auto z-5 pointer-events-none fixed" src="/images/modeling.jpg"></img>
                 <div className="flex-grow z-10">
-                  <span className="text2 font-MessinaLight text-8xl text-gray ">Modeling</span>
+                  <span className="text2 font-MessinaLight text-gray ">Modeling</span>
                 </div>
                 <div className="z-10">
                   <Arrow
@@ -134,11 +134,11 @@ export default function Services(){
               </div>
               <hr id="line2" className="z-10 h-1 bg-green text-transparent w-full mt-4"></hr>
             </div>
-            <div id="section3" className="relative cursor-crosshair flex flex-col h-40">
+            <div id="section3" className="relative cursor-crosshair flex flex-col h-32 md:h-40">
               <div className="flex flex-row">
                 <img id="image3" className="w-1/2 z-5 pointer-events-none fixed" src="/images/family.jpg"></img>
                 <div className="flex-grow z-10">
-                  <span className="text3 font-MessinaLight text-8xl text-gray">Family</span>
+                  <span className="text3 font-MessinaLight text-gray">Family</span>
                 </div>
                 <div className="z-10">
                   <Arrow 
@@ -148,11 +148,11 @@ export default function Services(){
               </div>
               <hr id="line3" className="z-10 h-1 bg-green text-transparent w-full mt-4"></hr>
             </div>
-            <div id="section4" className="relative cursor-crosshair flex flex-col h-40">
+            <div id="section4" className="relative cursor-crosshair flex flex-col h-32 md:h-40">
               <div className="flex flex-row">
                 <img id="image4" className="w-1/2 z-5 pointer-events-none fixed" src="/images/couple.jpg"></img>
                 <div className="flex-grow z-10">
-                  <span className="text4 font-MessinaLight text-8xl text-gray">Couple</span>
+                  <span className="text4 font-MessinaLight text-gray">Couple</span>
                 </div>
                 <div className="z-10">
                   <Arrow 
@@ -162,11 +162,11 @@ export default function Services(){
               </div>
               <hr id="line4" className="z-10 h-1 bg-green text-transparent w-full mt-4"></hr>
             </div>
-            <div id="section5" className="relative cursor-crosshair flex flex-col h-40">
+            <div id="section5" className="relative cursor-crosshair flex flex-col h-32 md:h-40">
               <div className="flex flex-row">
                 <img id="image5" className="w-1/2 z-5 pointer-events-none fixed " src="/images/pet.jpg"></img>
                 <div className="flex-grow z-10">
-                  <span className="text5 font-MessinaLight text-8xl text-gray">Pet</span>
+                  <span className="text5 font-MessinaLight text-gray">Pet</span>
                 </div>
                 <div className="z-10">
                   <Arrow 

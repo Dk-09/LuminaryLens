@@ -129,8 +129,8 @@ export default function Menu({hamButton, setHamButton}){
 
     return(
         <div className="flex flex-col h-screen w-screen fade bg-black">
-            <div className="flex flex-row w-screen px-16 py-8">
-                <div id="LOGO" className="relative logo font-Stardom text-6xl">
+            <div className="flex flex-row w-screen px-4 lg:px-16 py-8">
+                <div id="LOGO" className="relative logo font-Stardom text-4xl md:text-6xl">
                     LL
                 </div> 
                 <div onClick={handleHamButtomClick} id="HAM" className="flex justify-center items-center cursor-pointer float-right ml-auto">
@@ -140,8 +140,8 @@ export default function Menu({hamButton, setHamButton}){
                     </svg>
                 </div>     
             </div>
-            <div className="flex flex-col flex-grow justify-center items-center">
-                <div className="text-9xl text-center font-MessinaBold">
+            <div className="flex flex-col flex-grow justify-start py-20 md:py-0 md:justify-center items-center">
+                <div className="text-5xl md:text-9xl text-center font-MessinaBold">
                     {Object.entries(pages).map(entry => {
                         const[key, value] = entry;
                         const Id1 = key + "1"
@@ -154,7 +154,7 @@ export default function Menu({hamButton, setHamButton}){
                                 onMouseEnter={() => menuTextAniIn(value)} 
                                 onMouseLeave={() => menuTextAniOut(value)} >
                                 <div className="inline-block animateText cursor-pointer">
-                                    <div className="flex flex-col h-28 overflow-hidden">
+                                    <div className="flex flex-col h-12 md:h-28 overflow-hidden">
                                         <a id={Id1} className="block">{key}</a>
                                         <a id={Id2} className="block font-MessinaLight">{key}</a>
                                     </div>
