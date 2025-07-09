@@ -1,7 +1,7 @@
 import Hero from "../components/Hero"
 import { useGSAP } from "@gsap/react"
-import gsap from "gsap-trial"
-import { DrawSVGPlugin } from "gsap-trial/all"
+import gsap from "gsap"
+import { DrawSVGPlugin } from "gsap/all"
 
 export default function Home(){
     useGSAP(() => {

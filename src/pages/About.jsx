@@ -1,6 +1,7 @@
+import gsap from 'gsap'
 import { useGSAP } from "@gsap/react"
-import gsap from "gsap-trial"
-import { ScrollTrigger } from "gsap-trial/all"
+
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 
 export default function About(){

@@ -1,4 +1,4 @@
-import gsap from "gsap-trial"
+import gsap from 'gsap'
 import { useGSAP } from "@gsap/react"
 
 export default function Card({title, img1, des, year, pad}){

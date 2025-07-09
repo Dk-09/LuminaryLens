@@ -1,6 +1,6 @@
+import gsap from 'gsap'
 import { useEffect, useState } from "react";
 import Menu from "./Menu";
-import gsap from "gsap-trial"
 
 export default function Nav(){
     const [hamButton, setHamButton] = useState(null)

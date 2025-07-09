@@ -1,6 +1,7 @@
-import gsap from "gsap-trial"
-import { useGSAP } from "@gsap/react"
-import { ScrollSmoother, ScrollTrigger } from "gsap-trial/all"
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { ScrollSmoother } from 'gsap/ScrollSmoother'
+import { useGSAP } from '@gsap/react'
 
 import Nav from "./components/Nav"
 import Projects from "./pages/Projects"

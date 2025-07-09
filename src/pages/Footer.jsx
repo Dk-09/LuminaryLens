@@ -1,4 +1,4 @@
-import gsap from "gsap-trial"
+import gsap from 'gsap'
 import { useGSAP } from "@gsap/react"
 
 export default function Footer() {
@@ -60,10 +60,10 @@ export default function Footer() {
                 <div className="flex flex-col gap-4 flex-grow">
                     <span className="text-green">FOLLOW US</span>
                     <div className="flex flex-col">
-                        <a href="https://www.instagram.com/luminarylensphotography/" target="_blank" rel="noreferrer">Instagram</a>
-                        <a href="https://www.facebook.com/luminarylensphotography/" target="_blank" rel="noreferrer">Facebook</a>
-                        <a href="https://www.linkedin.com/company/luminary-lens-photography/" target="_blank" rel="noreferrer">LinkedIn</a>
-                        <a href="https://www.twitter.com/luminarylensphotography/" target="_blank" rel="noreferrer">Twitter</a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a>
+                        <a href="https://www.linkedin.com/company/" target="_blank" rel="noreferrer">LinkedIn</a>
+                        <a href="https://www.twitter.com/" target="_blank" rel="noreferrer">Twitter</a>
                     </div>
                 </div>
                 <div className="flex flex-col gap-4 text-right">
