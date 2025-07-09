@@ -2,28 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @font-face {
-    font-family: "Stardom";
-    src: url("Stardom.ttf");
+  font-family: 'Stardom';
+  src: url('/fonts/Stardom.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: "MessinaLight";
-    src: url("MessinaSans-Light.ttf");
+  font-family: 'MessinaLight';
+  src: url('/fonts/MessinaSans-Light.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: "MessinaBold";
-    src: url("MessinaSans-Bold.ttf");
+  font-family: 'MessinaBold';
+  src: url('/fonts/MessinaSans-Bold.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: "MessinaRegular";
-    src: url("MessinaSans-Regular.ttf");
+  font-family: 'MessinaRegular';
+  src: url('/fonts/MessinaSans-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: "RanadeRegular";
-    src: url("Ranade-Regular.ttf");
+  font-family: 'RanadeRegular';
+  src: url('/fonts/Ranade-Regular.ttf') format('truetype');
 }
 
